@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface ProjectMockupProps {
-  type: 'portfolio' | 'landing' | 'wordpress' | 'webapp' | 'countries';
+  type: 'Local Storage Script' | 'Finance Webpage' | 'Mens Shop' | 'webapp' | 'countries';
   className?: string;
 }
 
 export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = "w-full h-full" }) => {
   switch (type) {
-    case 'portfolio':
+    case 'Local Storage Script':
       return (
         <div className={`${className} bg-slate-950 p-3 rounded-lg overflow-hidden flex flex-col justify-between border border-slate-800 text-left select-none relative group-hover:scale-105 transition-transform duration-300`}>
           {/* Subtle glow */}
@@ -21,7 +21,7 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
               <span className="w-2 h-2 rounded-full bg-emerald-500/80" />
             </div>
             <div className="text-[9px] text-slate-400 font-mono bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
-              ramkumar.dev
+              localstoragescript.netlify.app
             </div>
             <div className="w-6" />
           </div>
@@ -29,9 +29,9 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
           {/* Mini Portfolio Hero */}
           <div className="flex items-center justify-between gap-2 py-2">
             <div className="space-y-1 max-w-[60%]">
-              <div className="text-[7px] text-cyan-400 font-bold uppercase tracking-wider">Hello, I'm</div>
-              <div className="text-xs font-black text-white tracking-tight leading-none">RAM KUMAR</div>
-              <div className="text-[8px] text-slate-300 leading-tight">Web Specialist</div>
+              <div className="text-[7px] text-cyan-400 font-bold uppercase tracking-wider">Browser Utility</div>
+              <div className="text-xs font-black text-white tracking-tight leading-none">LOCAL STORAGE</div>
+              <div className="text-[8px] text-slate-300 leading-tight">Save and manage data</div>
               <div className="flex gap-1 pt-1">
                 <span className="h-3 px-1.5 rounded-full bg-blue-600 text-[6px] text-white flex items-center font-medium">Work</span>
                 <span className="h-3 px-1.5 rounded-full bg-slate-800 text-[6px] text-slate-300 flex items-center">GitHub</span>
@@ -50,22 +50,22 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
           {/* Mini stats */}
           <div className="grid grid-cols-3 gap-1 pt-2 border-t border-slate-800/60 mt-1">
             <div className="bg-slate-900/80 rounded p-1 text-center">
-              <div className="text-[8px] font-bold text-blue-400">6+</div>
-              <div className="text-[5px] text-slate-400">Years</div>
+              <div className="text-[8px] font-bold text-blue-400">Save</div>
+              <div className="text-[5px] text-slate-400">Data</div>
             </div>
             <div className="bg-slate-900/80 rounded p-1 text-center">
-              <div className="text-[8px] font-bold text-blue-400">50+</div>
-              <div className="text-[5px] text-slate-400">Emails</div>
+              <div className="text-[8px] font-bold text-blue-400">Edit</div>
+              <div className="text-[5px] text-slate-400">Entries</div>
             </div>
             <div className="bg-slate-900/80 rounded p-1 text-center">
-              <div className="text-[8px] font-bold text-emerald-400">100%</div>
-              <div className="text-[5px] text-slate-400">Satisfaction</div>
+              <div className="text-[8px] font-bold text-emerald-400">Clear</div>
+              <div className="text-[5px] text-slate-400">Storage</div>
             </div>
           </div>
         </div>
       );
 
-    case 'landing':
+    case 'Finance Webpage':
       return (
         <div className={`${className} bg-slate-900 p-3 rounded-lg overflow-hidden flex flex-col justify-between border border-slate-800 text-left select-none relative group-hover:scale-105 transition-transform duration-300`}>
           <div className="flex items-center justify-between pb-2 border-b border-slate-800 mb-2">
@@ -74,13 +74,13 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
               <span className="w-2 h-2 rounded-full bg-amber-500/80" />
               <span className="w-2 h-2 rounded-full bg-emerald-500/80" />
             </div>
-            <span className="text-[8px] text-blue-400 font-semibold">CloudScale UI</span>
+            <span className="text-[8px] text-blue-400 font-semibold">Finance Webpage</span>
             <div className="w-4 h-1 bg-blue-500/40 rounded-full" />
           </div>
 
           <div className="bg-gradient-to-br from-blue-900/40 via-indigo-900/30 to-slate-900 p-2 rounded-md border border-blue-800/40 mb-2">
-            <div className="text-[9px] font-bold text-white mb-0.5">Scale Your Revenue</div>
-            <div className="text-[6px] text-slate-300 leading-tight mb-1.5">The modern analytics platform built for high-growth digital teams.</div>
+            <div className="text-[9px] font-bold text-white mb-0.5">Plan Your Financial Future</div>
+            <div className="text-[6px] text-slate-300 leading-tight mb-1.5">Simple tools and insights to make more confident financial decisions.</div>
             <div className="flex gap-1">
               <span className="h-3 px-2 rounded bg-blue-500 text-[6px] text-white flex items-center font-bold">Start Free</span>
               <span className="h-3 px-1.5 rounded bg-slate-800 text-[6px] text-slate-300 flex items-center">Live Tour</span>
@@ -90,8 +90,8 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
           {/* Mini chart card */}
           <div className="bg-slate-950 p-1.5 rounded border border-slate-800 flex items-center justify-between">
             <div className="space-y-0.5">
-              <div className="text-[6px] text-slate-400">Total Conversion</div>
-              <div className="text-[9px] font-bold text-emerald-400">+34.8%</div>
+              <div className="text-[6px] text-slate-400">Portfolio Growth</div>
+              <div className="text-[9px] font-bold text-emerald-400">+24.8%</div>
             </div>
             <div className="flex items-end gap-1 h-6">
               <div className="w-1.5 bg-blue-500/40 rounded-t h-2" />
@@ -103,7 +103,7 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
         </div>
       );
 
-    case 'wordpress':
+    case 'Mens Shop':
       return (
         <div className={`${className} bg-slate-900 p-3 rounded-lg overflow-hidden flex flex-col justify-between border border-slate-800 text-left select-none relative group-hover:scale-105 transition-transform duration-300`}>
           {/* Top navigation */}
@@ -115,7 +115,7 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
             </div>
             <div className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-              <span className="text-[8px] font-bold text-emerald-400">Voya Nature</span>
+              <span className="text-[8px] font-bold text-emerald-400">Men&apos;s Shop</span>
             </div>
             <div className="text-[7px] text-slate-400">Menu</div>
           </div>
@@ -125,8 +125,8 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
             <div className="flex items-center justify-between">
               <div className="space-y-1">
                 <span className="text-[6px] font-semibold text-emerald-400 uppercase tracking-wider">Enterprise CMS</span>
-                <div className="text-[9px] font-bold text-white">Sustainable Future</div>
-                <div className="text-[6px] text-slate-300 line-clamp-1">Custom blocks & SEO optimized templates.</div>
+                <div className="text-[9px] font-bold text-white">New Season Essentials</div>
+                <div className="text-[6px] text-slate-300 line-clamp-1">Explore clean, modern styles for every occasion.</div>
               </div>
               <div className="w-7 h-7 rounded-full bg-emerald-800/60 border border-emerald-600/40 flex items-center justify-center shrink-0">
                 <svg viewBox="0 0 24 24" className="w-4 h-4 text-emerald-300" fill="currentColor">
@@ -140,11 +140,11 @@ export const ProjectMockup: React.FC<ProjectMockupProps> = ({ type, className = 
           <div className="grid grid-cols-2 gap-1.5">
             <div className="bg-slate-950 p-1.5 rounded border border-slate-800">
               <div className="h-3 w-full bg-emerald-900/40 rounded mb-1" />
-              <div className="text-[7px] font-bold text-slate-200">ESG Insights</div>
+              <div className="text-[7px] font-bold text-slate-200">Shirts</div>
             </div>
             <div className="bg-slate-950 p-1.5 rounded border border-slate-800">
               <div className="h-3 w-full bg-emerald-900/40 rounded mb-1" />
-              <div className="text-[7px] font-bold text-slate-200">Annual Report</div>
+              <div className="text-[7px] font-bold text-slate-200">Shoes</div>
             </div>
           </div>
         </div>

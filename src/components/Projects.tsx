@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { ArrowRight, ExternalLink, Github, Eye } from 'lucide-react';
+import React from 'react';
+import { ArrowRight,ExternalLink, Github, Eye } from 'lucide-react';
 import { websiteProjects } from '../data/portfolioData';
 import { Project } from '../types';
-import { ProjectMockup } from './ProjectMockups';
 
 interface ProjectsProps {
   onSelectProject: (project: Project) => void;
@@ -35,7 +34,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
         </div>
 
         {/* 5 Project Cards Grid (5-cols on large screens, responsive on mobile) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-3.5">
           {websiteProjects.map((project) => (
             <div
               key={project.id}
@@ -44,9 +43,28 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
               {/* Top Mockup Image Container */}
               <div
                 onClick={() => onSelectProject(project)}
-                className="h-44 sm:h-48 bg-slate-950 p-2 cursor-pointer relative overflow-hidden"
+                onMouseEnter={(event) => {
+                  const image = event.currentTarget.querySelector('img');
+                  if (image) {
+                    const maxOffset = Math.max(0, image.offsetHeight - event.currentTarget.clientHeight + 16);
+                    image.style.transform = `translateY(-${maxOffset}px)`;
+                  }
+                }}
+                onMouseLeave={(event) => {
+                  const image = event.currentTarget.querySelector('img');
+                  if (image) image.style.transform = 'translateY(0)';
+                }}
+                className="h-44 sm:h-68 bg-slate-950 p-2 cursor-pointer relative overflow-hidden"
               >
-                <ProjectMockup type={project.mockupType} />
+                {project.imageUrl ? (
+                  <div className="h-full rounded-lg overflow-hidden bg-white">
+                    <img
+                      src={project.imageUrl}
+                      alt={`${project.title} Preview`}
+                      className="w-full h-auto min-h-full object-cover object-top rounded-lg transition-transform duration-[1800ms] ease-in-out"
+                    />
+                  </div>
+                ) : null}
                 <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 backdrop-blur-xs">
                   <span className="px-3 py-1.5 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center gap-1 shadow-md">
                     <Eye className="w-3.5 h-3.5" /> Quick Preview
@@ -57,22 +75,24 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
               {/* Card Body */}
               <div className="p-4 flex-1 flex flex-col justify-between text-left">
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition-colors">
-                    {project.number}. {project.title}
+                  <h3 className="text-lg font-bold text-slate-900 mb-1 line-clamp-1 group-hover:text-blue-600 transition-colors">
+                    {project.title}
                   </h3>
-                  <p className="text-xs text-slate-500 leading-relaxed line-clamp-2 mb-3">
+                  <p className="text-md text-slate-500 leading-relaxed line-clamp-2 mb-3">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Card CTA Buttons */}
                 <div className="flex items-center gap-2 pt-2 border-t border-slate-100">
-                  <button
-                    onClick={() => onSelectProject(project)}
-                    className="flex-1 py-1.5 px-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg text-center transition-colors shadow-xs cursor-pointer"
-                  >
-                    Live Demo
-                  </button>
+                  <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-bold text-xs shadow-md transition-colors"
+            >
+              <ExternalLink className="w-4 h-4" /> Live Demo
+            </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"

@@ -33,8 +33,27 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         {/* Body */}
         <div className="p-6 overflow-y-auto space-y-5 text-left">
           {/* Mockup Preview Container */}
-          <div className="h-56 sm:h-64 rounded-xl overflow-hidden shadow-lg border border-slate-800 bg-slate-950">
-            <ProjectMockup type={project.mockupType} />
+          <div
+            className="h-56 sm:h-64 rounded-xl overflow-hidden shadow-lg border border-slate-800 bg-slate-950"
+            onMouseEnter={(event) => {
+              const image = event.currentTarget.querySelector('img');
+              if (image) {
+                const maxOffset = Math.max(0, image.offsetHeight - event.currentTarget.clientHeight + 16);
+                image.style.transform = `translateY(-${maxOffset}px)`;
+              }
+            }}
+            onMouseLeave={(event) => {
+              const image = event.currentTarget.querySelector('img');
+              if (image) image.style.transform = 'translateY(0)';
+            }}
+          >
+            {project.imageUrl ? (
+              <img
+                src={project.imageUrl}
+                alt={`${project.title} Preview`}
+                className="block w-full h-auto min-h-full object-cover object-top rounded-lg transition-transform duration-[1800ms] ease-in-out"
+              />
+            ) : null}
           </div>
 
           <div>
@@ -42,7 +61,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               Overview & Architecture
             </h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              {project.description} Engineered with a mobile-first responsive architecture, semantic accessibility tags (WCAG compliant), robust component state handling, and modular structure.
+              {project.description} 
             </p>
           </div>
 
@@ -62,7 +81,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             </div>
           </div>
 
-          <div className="p-4 bg-slate-950 rounded-xl border border-slate-800/80 space-y-2">
+          <div className=" hidden p-4 bg-slate-950 rounded-xl border border-slate-800/80 space-y-2">
             <h5 className="text-xs font-bold text-slate-200">Key Deliverables</h5>
             <ul className="text-xs text-slate-400 space-y-1.5">
               <li className="flex items-center gap-2">

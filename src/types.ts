@@ -7,7 +7,8 @@ export interface Project {
   tags: string[];
   liveUrl: string;
   githubUrl: string;
-  mockupType: 'portfolio' | 'landing' | 'wordpress' | 'webapp' | 'countries';
+  mockupType: 'Local Storage Script' | 'Finance Webpage' | 'Mens Shop' | 'webapp' | 'countries';
+  imageUrl?: string;
 }
 
 export interface EmailTemplate {

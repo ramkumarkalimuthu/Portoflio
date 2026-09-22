@@ -1,5 +1,7 @@
 import { Project, EmailTemplate, SkillItem, ExperienceItem, AwardItem } from '../types';
-
+import localStoragePreview from '../images/local-storage-script-preview.png';
+import financewebpagepreview from '../images/finance-webpage-preview.png';
+import mensshoppreview from '../images/mensshop-preview.png';
 export const personalInfo = {
   name: 'Ram Kumar',
   role: 'Web Specialist & Digital Web Production',
@@ -15,11 +17,10 @@ export const personalInfo = {
   quote: 'Clean code, better experiences, happier users.',
   headlineHandwritten: 'Turning Ideas into Impact',
   tags: [
-    'HTML Email',
+    'HTML Email Campaigns Development',
     'Web Development',
-    'CMS',
-    'Accessibility',
-    'Digital Production'
+    'CMS',       
+    
   ]
 };
 
@@ -63,37 +64,40 @@ export const skillsData: SkillItem[] = [
 
 export const websiteProjects: Project[] = [
   {
-    id: 'portfolio-website',
+    id: 'Local Storage Script',
     number: '1',
-    title: 'Portfolio Website',
+    title: 'Local Storage Script',
     category: 'Web Development',
-    description: 'Personal portfolio with modern design and animations.',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-    liveUrl: '#',
-    githubUrl: 'https://github.com/ramkumar19121996/portfolio',
-    mockupType: 'portfolio'
+    description: 'A browser-based developer utility for inspecting and managing client-side local storage. Built with HTML, CSS, and JavaScript, featuring CRUD operations, search/filtering, JSON handling, clipboard utilities, and responsive dark/light themes.',
+    tags: ['JavaScript', 'LocalStorage API', 'HTML5', 'CSS3'],
+    liveUrl: 'https://localstoragescript.netlify.app',
+    githubUrl: 'https://github.com/ramkumarkalimuthu/localstorage',
+    mockupType: 'Local Storage Script',
+    imageUrl: localStoragePreview
   },
   {
-    id: 'business-landing-page',
+    id: 'Finance Webpage',
     number: '2',
-    title: 'Business Landing Page',
-    category: 'Landing Page',
-    description: 'Responsive landing page for a product with modern UI.',
-    tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive'],
-    liveUrl: '#',
-    githubUrl: 'https://github.com/ramkumar19121996/business-landing',
-    mockupType: 'landing'
+    title: 'Finance Webpage',
+    category: 'Finance Website',
+    description: 'A modern multi-page finance website featuring responsive layouts, professional UI design, structured navigation, and interactive elements for a seamless user experience.',
+    tags: ['HTML5', 'CSS3', 'JavaScript','Bootstrap4', 'Responsive'],
+    liveUrl: 'https://financewebpage.netlify.app',
+    githubUrl: 'https://github.com/ramkumarkalimuthu/finace_template',
+    mockupType: 'Finance Webpage',
+    imageUrl: financewebpagepreview
   },
   {
     id: 'wordpress-website',
     number: '3',
-    title: 'WordPress Website',
-    category: 'CMS & Theme',
-    description: 'Custom WordPress theme development.',
-    tags: ['WordPress', 'PHP', 'Custom Gutenberg', 'ACF'],
-    liveUrl: '#',
-    githubUrl: 'https://github.com/ramkumar19121996/wordpress-theme',
-    mockupType: 'wordpress'
+    title: "Men's Shop",
+    category: 'E-commerce Website',
+    description: 'A modern multi-page mens fashion e-commerce website featuring product-focused layouts, category navigation, responsive design, and interactive UI elements for a smooth and engaging shopping experience.',
+    tags: ['HTML5', 'CSS3', 'JavaScript','Bootstrap4', 'E-commerce'],
+    liveUrl: 'https://menshops.netlify.app',
+    githubUrl: 'https://github.com/ramkumarkalimuthu/menshoptemplate',
+    mockupType: 'Mens Shop',
+    imageUrl: mensshoppreview
   },
   {
     id: 'web-application',

@@ -37,7 +37,7 @@ export const About: React.FC<AboutProps> = ({ onResumeClick }) => {
           </div>
 
           {/* Middle Column: Contact Info Card */}
-          <div className="lg:col-span-3 bg-slate-50 border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-center space-y-4">
+          <div className="lg:col-span-6 bg-slate-50 border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col justify-center space-y-4">
             {/* Name */}
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
@@ -113,7 +113,7 @@ export const About: React.FC<AboutProps> = ({ onResumeClick }) => {
           </div>
 
           {/* Right Column: Quote Card */}
-          <div className="lg:col-span-3 bg-[#F0F7FF] border border-blue-100 rounded-2xl p-6 sm:p-8 flex flex-col justify-center relative overflow-hidden">
+          <div className=" hidden lg:col-span-3 bg-[#F0F7FF] border border-blue-100 rounded-2xl p-6 sm:p-8 flex flex-col justify-center relative overflow-hidden">
             {/* Big quote glyph */}
             <div className="text-blue-400/40 text-5xl sm:text-6xl font-serif font-black leading-none mb-2 select-none">
               “

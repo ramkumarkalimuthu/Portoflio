@@ -97,7 +97,7 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
         </div>
 
         {/* 4 Hero Stats Cards Row */}
-        <div className="mt-14 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <div className=" hidden mt-14 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {statsData.map((stat, idx) => (
             <div
               key={idx}
