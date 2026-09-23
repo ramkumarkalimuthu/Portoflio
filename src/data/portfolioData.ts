@@ -11,13 +11,13 @@ export const personalInfo = {
   phone: '6381178710',
   linkedin: 'linkedin.com/in/ram-kumar-86b096140',
   linkedinUrl: 'https://linkedin.com/in/ram-kumar-86b096140',
-  githubUrl: 'https://github.com/ramkumar19121996',
+  githubUrl: 'https://github.com/ramkumarkalimuthu',
   bio: 'I build responsive, accessible and brand-focused digital experiences for enterprise marketing teams.',
   aboutText: 'Web Specialist with 6+ years of experience supporting enterprise digital marketing programs through web content updates, landing pages, email development, CMS asset management, QA, and accessibility. I enjoy turning complex requirements into clean, accessible and high-performing digital experiences.',
   quote: 'Clean code, better experiences, happier users.',
   headlineHandwritten: 'Turning Ideas into Impact',
   tags: [
-    'HTML Email Campaigns Development',
+    'Email Campaigns Development',
     'Web Development',
     'CMS',       
     
