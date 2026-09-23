@@ -51,15 +51,11 @@ export const EmailTemplates: React.FC<EmailTemplatesProps> = ({ onSelectTemplate
             <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
             Litmus & Email on Acid Validated
           </span>
-          <span className="hidden sm:inline text-slate-300">•</span>
-          <span className="flex items-center gap-1.5 text-slate-700 font-semibold">
-            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-            Voya Financial Enterprise Brand
-          </span>
+          
         </div>
 
         {/* 10 Email Cards Grid (5-cols on desktop, 2-cols on mobile) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3.5 sm:gap-4">
           {emailTemplates.map((template) => (
             <div
               key={template.id}
@@ -68,7 +64,13 @@ export const EmailTemplates: React.FC<EmailTemplatesProps> = ({ onSelectTemplate
             >
               {/* Email Mockup Preview */}
               <div className="h-56 sm:h-64 p-2 bg-slate-100/50 flex flex-col justify-center relative overflow-hidden">
-                <EmailMockup type={template.previewType} title={template.title} />
+                
+                <iframe
+                  src={template.liveUrl}
+                  title={`${template.title} Live Preview`}
+                  scrolling="no"
+                  className="absolute inset-0 w-full h-full border-0 pointer-events-none overflow-hidden"
+                />
 
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-xs">
@@ -81,8 +83,11 @@ export const EmailTemplates: React.FC<EmailTemplatesProps> = ({ onSelectTemplate
               {/* Title Strip */}
               <div className="p-3 bg-white border-t border-slate-100 text-center">
                 <h3 className="text-xs sm:text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors line-clamp-1">
-                  {template.number}. {template.title}
+                  {template.title}
                 </h3>
+                 <p className="text-md text-slate-500 leading-relaxed line-clamp-2 mb-3">
+                    {template.description}
+                  </p>
               </div>
             </div>
           ))}

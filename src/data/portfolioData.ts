@@ -2,6 +2,8 @@ import { Project, EmailTemplate, SkillItem, ExperienceItem, AwardItem } from '..
 import localStoragePreview from '../images/local-storage-script-preview.png';
 import financewebpagepreview from '../images/finance-webpage-preview.png';
 import mensshoppreview from '../images/mensshop-preview.png';
+import sunnysidepreview from '../images/sunnyside-preview.png';
+import loopstudiospreview from '../images/loopstudios-preview.png';
 export const personalInfo = {
   name: 'Ram Kumar',
   role: 'Web Specialist & Digital Web Production',
@@ -67,7 +69,7 @@ export const websiteProjects: Project[] = [
     id: 'Local Storage Script',
     number: '1',
     title: 'Local Storage Script',
-    category: 'Web Development',
+    category: 'Frontend',
     description: 'A browser-based developer utility for inspecting and managing client-side local storage. Built with HTML, CSS, and JavaScript, featuring CRUD operations, search/filtering, JSON handling, clipboard utilities, and responsive dark/light themes.',
     tags: ['JavaScript', 'LocalStorage API', 'HTML5', 'CSS3'],
     liveUrl: 'https://localstoragescript.netlify.app',
@@ -79,7 +81,7 @@ export const websiteProjects: Project[] = [
     id: 'Finance Webpage',
     number: '2',
     title: 'Finance Webpage',
-    category: 'Finance Website',
+    category: 'Frontend',
     description: 'A modern multi-page finance website featuring responsive layouts, professional UI design, structured navigation, and interactive elements for a seamless user experience.',
     tags: ['HTML5', 'CSS3', 'JavaScript','Bootstrap4', 'Responsive'],
     liveUrl: 'https://financewebpage.netlify.app',
@@ -88,10 +90,10 @@ export const websiteProjects: Project[] = [
     imageUrl: financewebpagepreview
   },
   {
-    id: 'wordpress-website',
+    id: 'Mens Shop',
     number: '3',
     title: "Men's Shop",
-    category: 'E-commerce Website',
+    category: 'Frontend',
     description: 'A modern multi-page mens fashion e-commerce website featuring product-focused layouts, category navigation, responsive design, and interactive UI elements for a smooth and engaging shopping experience.',
     tags: ['HTML5', 'CSS3', 'JavaScript','Bootstrap4', 'E-commerce'],
     liveUrl: 'https://menshops.netlify.app',
@@ -100,26 +102,28 @@ export const websiteProjects: Project[] = [
     imageUrl: mensshoppreview
   },
   {
-    id: 'web-application',
+    id: 'Sunnyside',
     number: '4',
-    title: 'Web Application',
-    category: 'Full Stack',
-    description: 'Dynamic web application with PHP & MySQL.',
-    tags: ['PHP', 'MySQL', 'REST API', 'JavaScript'],
-    liveUrl: '#',
-    githubUrl: 'https://github.com/ramkumar19121996/php-mysql-app',
-    mockupType: 'webapp'
+    title: 'Sunnyside',
+    category: 'Frontend',
+    description: 'A modern, visually engaging landing page for a creative digital agency, featuring a clean layout, bold typography, responsive sections, and carefully structured content to create a polished user experience across desktop and mobile devices.',
+    tags: ['HTML', 'CSS', 'Javascript'],
+    liveUrl: 'https://frontendprojectslist.netlify.app/sunnyside/',
+    githubUrl: 'https://github.com/ramkumarkalimuthu/frontend-project/tree/main/sunnyside',
+    mockupType: 'webapp',
+    imageUrl: sunnysidepreview
   },
   {
-    id: 'country-explorer',
+    id: 'Loopstudios Landing Page',
     number: '5',
-    title: 'Country Explorer',
-    category: 'API Integration',
-    description: 'REST Countries API project with search and filters.',
-    tags: ['JavaScript', 'REST API', 'Search & Filter', 'CSS Grid'],
-    liveUrl: '#',
-    githubUrl: 'https://github.com/ramkumar19121996/country-explorer',
-    mockupType: 'countries'
+    title: 'Loopstudios Landing Page',
+    category: 'Frontend',
+    description: 'A modern VR-focused landing page showcasing immersive digital experiences through bold typography, responsive layouts, interactive navigation, and a visually engaging creations gallery. The design emphasizes strong visual hierarchy and a seamless experience across desktop and mobile devices.',
+    tags: ['JavaScript', 'HTML5', 'CSS3'],
+    liveUrl: 'https://frontendprojectslist.netlify.app/loopstudios/',
+    githubUrl: 'https://github.com/ramkumarkalimuthu/frontend-project/tree/main/loopstudios',
+    mockupType: 'countries',
+    imageUrl: loopstudiospreview
   }
 ];
 
@@ -127,123 +131,449 @@ export const emailTemplates: EmailTemplate[] = [
   {
     id: 'template-01',
     number: '1',
-    title: 'Financial Services',
-    category: 'Financial',
-    description: 'Institutional wealth management advisory and quarterly account overview with responsive data columns.',
-    client: 'Voya Financial',
-    bannerColor: '#00587C',
-    accentColor: '#F37021',
-    previewType: 'financial',
-    subjectLine: 'Important Update: Your Financial Advisory & Quarterly Summary'
+    title: 'A Fresher — Email Template',
+    category: 'Email Template',
+    description: 'A professionally designed responsive HTML email template created for a fresher-focused campaign, featuring a clean visual hierarchy, structured content sections, prominent call-to-action elements, and email-client-friendly layouts.',
+    client: 'A Fresher',
+    htmlCode: String.raw`<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=70637012-e40b-4c3e-8f1f-a226aee6c85b
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="x-apple-disable-message-reformatting" />
+   <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Newletter</title>
+	
+	<style type="text/css">
+		/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+		body { background-color: #141414; margin: 0px; padding:0px; font-family: Arial, sans-serif; font-size: 15px; line-height: 22px; color:#636363; }
+		a{text-decoration: none} 
+		/* below class uses only variable headshot */
+		.headshot img{max-width: 100%}
+		
+		/* below class use for number change blue color pixel6 */
+		.mob_link a{color: inherit !important; }
+		.superscript{
+			line-height: 0px;
+			font-size: 15px;
+			vertical-align: 10px;
+		}
+		
+		
+		@media only screen and (max-width:480px){
+			.image, .image_custom_bannar { width:100%!important; height:auto!important; }
+			.container { width:480px!important; }
+			.db { display: block!important; }
+			.dw { width:100%!important; min-width:100%!important; max-width:100%!important; }
+			.tc{text-align: center!important;}
+			.pt{padding-top:0px!important;}
+			.mb{margin-bottom: 25px;}
+			.nospace{white-space: normal;}
+			br{
+				display: none !important;
+				visibility: hidden !important;
+			}
+			.pl{padding-left:0px!important;}
+		}
+		@media only screen and (max-width:480px){
+				.container { width:100%!important; }
+			.no-width{width:20% !important;}
+           .yes-width{width:60% !important;}
+			}
+	</style>
+	
+</head>
+	<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f1f1f1;">
+<tbody>
+
+<tr>
+<td align="center" valign="top">
+<table width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #141414; width: 600px;" class="container">
+<tbody><!-- Let to strat--->
+	
+<tr>
+	<td align="left" valign="top" style="background-color:#141414;padding: 0px 30px">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  			<tbody>
+	  			<tr><td height="8"></td></tr>
+    			<tr>
+      				<td width="50%" align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 12px; line-height:16px; color:#ffffff;"></td>
+					<td width="50%" align="right" valign="top" style="font-family: Arial, sans-serif; font-size: 12px; line-height:16px; color:#636363;">View in the browser</td>
+    			</tr>
+	  			<tr><td height="8"></td></tr>
+  			</tbody>
+		</table>
+	</td>
+</tr>
+
+<tr>
+	<td align="left" valign="top"  style="padding:0px 30px">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  			<tbody>
+    			<tr><td height="20"></td></tr>
+				<tr>
+				  <td width="55%" align="left" valign="top" class="db dw tc mb"><img src="logo.png" width="190" alt="Logo"/></td>
+					<td width="45%" align="right" valign="top" class="db dw tc">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="20%" align="right" valign="top" style="font-family: Arial, sans-serif; font-size: 15px; line-height:24px; color:#636363;" class="tc">Websites</td>
+		<td width="3%"></td>
+      <td width="20%" align="right" valign="top" style="font-family: Arial, sans-serif; font-size: 15px; line-height:24px; color:#636363;" class="tc">Components</td>
+		<td width="3%"></td>
+      <td width="15%" align="right" valign="top" style="font-family: Arial, sans-serif; font-size: 15px; line-height:22px; color:#636363;" class="tc">Pages</td>
+    </tr>
+  </tbody>
+</table>
+
+					
+					</td>
+				</tr>
+    			<tr><td height="20"></td></tr>
+  			</tbody>
+		</table>
+	</td>
+</tr>
+
+
+<tr>
+	<td align="left" valign="top" style="padding:0px 30px">
+   		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  			<tbody>
+				<tr><td height="32"></td></tr>
+				<tr>
+					<td align="left" valign="top">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+   <tr>
+      				<td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 12px; line-height:18px;font-weight:bold; color:#616161;text-transform:uppercase">
+						Monthly Recap
+					</td>
+    			</tr>
+				<tr><td height="5"></td></tr>
+				<tr>
+      				<td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 36px; line-height:38px; color:#FFFFFF;">
+						Staff picks
+					</td>
+    			</tr>
+  </tbody>
+</table>
+
+					
+					</td>
+				</tr>
+    			<tr><td height="32"></td></tr>
+	
+	<tr><td height="2" style="background-color:#343434"></td></tr>
+	
+	
+				<tr>
+		<td align="left" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	  <tr><td height="32"></td></tr>
+    <tr>
+      <td width="50%" align="left" valign="top" class="db dw mb tc">
+		<img src="tola.png" width="232"  alt="tola"/></td>
+      <td width="50%" align="left" valign="middle" class="db dw">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 28px; line-height:28px; color:#FFFFFF;">Tola</td>
+    </tr>
+	  <tr><td height="10"></td></tr>
+	  <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#636363;">Tola combines accounts payable, receivable and cash flow management with working capital, helping save businesses time and money.</td>
+    </tr>
+	   <tr><td height="10"></td></tr>
+	  <tr><td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;background-color:#262626;display: inline-block;padding:12px 22px;border-radius:8px;">
+		  <a href="#" target="_blank" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;">See more</a>
+		  
+		  </td></tr>
+	  
+  </tbody>
+</table>
+
+		
+		</td>
+    </tr>
+	  <tr><td height="32"></td></tr>
+  </tbody>
+</table>
+
+		
+		
+		</td>
+	</tr>
+			<tr><td height="2" style="background-color:#343434"></td></tr>	
+				<tr>
+		<td align="left" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	  <tr><td height="32"></td></tr>
+    <tr>
+      <td width="50%" align="left" valign="top" class="db dw mb tc">
+		<img src="yellowbird.png" width="232"  alt="yellowbird"/></td>
+      <td width="50%" align="left" valign="middle" class="db dw">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 28px; line-height:28px; color:#FFFFFF;">Yellowbird</td>
+    </tr>
+	  <tr><td height="10"></td></tr>
+	  <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#636363;">The world's best-tasting hot sauce.
+Made with farm-fresh, no bullish!t ingredients, so you can drizzle as
+often and adventurously as you like.</td>
+    </tr>
+	   <tr><td height="10"></td></tr>
+	  <tr><td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;background-color:#262626;display: inline-block;padding:12px 22px;border-radius:8px;">
+		  <a href="#" target="_blank" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;">See more</a>
+		  
+		  </td></tr>
+	  
+  </tbody>
+</table>
+
+		
+		</td>
+    </tr>
+	  <tr><td height="32"></td></tr>
+  </tbody>
+</table>
+
+		
+		
+		</td>
+	</tr>
+				
+				<tr><td height="2" style="background-color:#343434"></td></tr>
+				
+				<tr>
+		<td align="left" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	  <tr><td height="32"></td></tr>
+    <tr>
+      <td width="50%" align="left" valign="top" class="db dw mb tc">
+		<img src="mantie.png" width="232"  alt="mantle"/></td>
+      <td width="50%" align="left" valign="middle" class="db dw">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 28px; line-height:28px; color:#FFFFFF;">MAN-TLE</td>
+    </tr>
+	  <tr><td height="10"></td></tr>
+	  <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#636363;">Heavy Weight Clothing Pty Ltd is an
+Australian company designing and manufacturing the collections of MANTLE.</td>
+    </tr>
+	   <tr><td height="10"></td></tr>
+	  <tr><td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;background-color:#262626;display: inline-block;padding:12px 22px;border-radius:8px;">
+		  <a href="#" target="_blank" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;">See more</a>
+		  
+		  </td></tr>
+	  
+  </tbody>
+</table>
+
+		
+		</td>
+    </tr>
+	  <tr><td height="32"></td></tr>
+  </tbody>
+</table>
+
+		
+		
+		</td>
+	</tr>
+				
+				<tr><td height="2" style="background-color:#343434"></td></tr>
+				<tr>
+		<td align="left" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	  <tr><td height="32"></td></tr>
+    <tr>
+      <td width="50%" align="left" valign="top" class="db dw mb tc">
+		<img src="monolif.png" width="232"  alt="monolif"/></td>
+      <td width="50%" align="left" valign="middle" class="db dw">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 28px; line-height:28px; color:#FFFFFF;">MONOLIF</td>
+    </tr>
+	  <tr><td height="10"></td></tr>
+	  <tr>
+      <td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#636363;">A Creative Micro-Studio that crafts
+bespoke websites &amp; digital experiences for startups. </td>
+    </tr>
+	   <tr><td height="10"></td></tr>
+	  <tr><td align="left" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;background-color:#262626;display: inline-block;padding:12px 22px;border-radius:8px;">
+		  <a href="#" target="_blank" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;">See more</a>
+		  
+		  </td></tr>
+	  
+  </tbody>
+</table>
+
+		
+		</td>
+    </tr>
+	  <tr><td height="32"></td></tr>
+  </tbody>
+</table>
+
+		
+		
+		</td>
+	</tr>
+				
+				<tr><td height="2" style="background-color:#343434"></td></tr>
+				
+				<tr><td height="32"></td></tr>
+				
+				<tr><td align="left" valign="top" style="background-color:#BCFE2F; padding:0px 22px;border-radius:12px">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	  <tr><td height="16"></td></tr>
+    <tr>
+      <td width="60%" align="left" valign="middle" style="font-family: 'Inter', sans-serif; 
+  font-weight:700;
+   color:#000000;font-size:14px;line-height: 24px">Get inspired with no limits</td>
+		 <td width="40%" align="right" valign="top">
+			 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+   <tr><td align="right" valign="top" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;">
+		  <a href="#" target="_blank" style="font-family: Arial, sans-serif; font-size: 16px; line-height:24px; color:#ffffff;background-color:#262626;display: inline-block;padding:12px 22px;border-radius:8px;">Become PRO</a>
+		  
+		  </td></tr>
+  </tbody>
+</table>
+
+			 
+			</td>
+    </tr>
+	  <tr><td height="16"></td></tr>
+  </tbody>
+</table>
+
+					
+					
+					</td></tr>
+				
+				
+				
+				<tr><td height="32"></td></tr>
+				
+				<tr><td height="2" style="background-color:#343434"></td></tr>
+				
+				
+				
+  			</tbody>
+		</table>		
+	</td>
+</tr>
+
+	<tr>
+	<td align="left" valign="top"  style="padding:0px 30px">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  			<tbody>
+    			<tr><td height="32"></td></tr>
+				<tr>
+				  <td width="50%" align="left" valign="middle" class="db dw mb tc"><img src="logo.png" width="120" alt="Logo"/></td>
+				  <td width="50%" align="right" valign="middle" class="db dw tc">
+					  <a href="#" target="_blank"><img src="Instagram.png" width="24" alt="Instagram"/></a>&nbsp;&nbsp;
+					 <a href="#" target="_blank"><img src="Facebook.png" width="24" alt="Facebook"/></a>&nbsp;&nbsp;
+					 <a href="#" target="_blank"><img src="X.png" width="24" alt="X"/></a>&nbsp;&nbsp;
+					 <a href="#" target="_blank"><img src="YouTube.png" width="24" alt="YouTube"/></a>
+					
+					</td>
+				</tr>
+    			<tr><td height="32"></td></tr>
+  			</tbody>
+		</table>
+	</td>
+</tr>
+
+	
+	<tr>
+	<td align="left" valign="top" style="padding: 0px 30px;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td height="32"></td></tr>
+				<tr>
+					<td align="left" valign="top" style="color:#6e6e6e; font-size:13px;line-height:16px;font-family: Arial, sans-serif;">
+						T. Sevcenkos g. 16K, Vilnius Lithuania
+					</td>
+				</tr>
+				<tr><td height="16"></td></tr>
+				<tr>
+					<td align="left" valign="top" style="color:#6e6e6e; font-size:13px;line-height:16px;font-family: Arial, sans-serif;">
+						You received this email because you signed up on our website or made a purchase from us.
+					</td>
+				</tr>
+				<tr><td height="16"></td></tr>
+				<tr>
+					<td align="left" valign="top" style="color:#6e6e6e; font-size:13px;line-height:16px;font-family: Arial, sans-serif;">
+						Unsubscribe
+					</td>
+				</tr>
+				<tr><td height="32"></td></tr>
+			</tbody>
+		</table>
+	</td>
+</tr>
+
+	<tr>
+	<td align="left" valign="top" >
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  			<tbody>
+    			
+				<tr>
+				  <td><img src="big_logo.png" width="600" alt="big_logo" class="image"/></td>
+				</tr>
+    			
+  			</tbody>
+		</table>
+	</td>
+</tr>
+
+
+	
+</tbody>
+</table>
+</td>
+</tr>
+
+
+<!--Email Template Ends--></tbody>
+</table>
+</body>
+</html>`,   
+   
+    subjectLine: 'A Fresher – Responsive HTML Email Template',
+    liveUrl: 'https://emailcampaigns.netlify.app/a-fresher-website/index.html',
+    imageUrl: 'https://a-fresher-email-template.netlify.app/preview.png'
   },
-  {
-    id: 'template-02',
-    number: '2',
-    title: 'Retirement Planning',
-    category: 'Planning',
-    description: 'Comprehensive retirement readiness roadmap with personalized contribution milestones.',
-    client: 'Voya Financial',
-    bannerColor: '#007096',
-    accentColor: '#F37021',
-    previewType: 'retirement',
-    subjectLine: 'Are you on track? Discover your personal retirement savings path'
-  },
-  {
-    id: 'template-03',
-    number: '3',
-    title: 'Investment Update',
-    category: 'Investment',
-    description: 'Quarterly market pulse and diversified portfolio rebalancing insights for private clients.',
-    client: 'Voya Financial',
-    bannerColor: '#1E293B',
-    accentColor: '#F37021',
-    previewType: 'investment',
-    subjectLine: 'Q3 Market Insights: Capital Growth & Rebalancing Update'
-  },
-  {
-    id: 'template-04',
-    number: '4',
-    title: 'Wellness Campaign',
-    category: 'Wellness',
-    description: 'Employee financial well-being initiative encouraging smart healthcare savings habits.',
-    client: 'Voya Financial',
-    bannerColor: '#2D6A4F',
-    accentColor: '#52B788',
-    previewType: 'wellness',
-    subjectLine: 'Invest in your health & wealth with new wellness perks'
-  },
-  {
-    id: 'template-05',
-    number: '5',
-    title: 'Event Invitation',
-    category: 'Corporate',
-    description: 'Exclusive executive webinar invitation with calendar RSVP integration and speaker roster.',
-    client: 'Voya Financial',
-    bannerColor: '#0F172A',
-    accentColor: '#38BDF8',
-    previewType: 'event',
-    subjectLine: 'Invitation: 2026 Leadership Summit - Register Today'
-  },
-  {
-    id: 'template-06',
-    number: '6',
-    title: 'Product Announcement',
-    category: 'Marketing',
-    description: 'Feature launch email highlighting streamlined mobile account management capabilities.',
-    client: 'Voya Financial',
-    bannerColor: '#0B2545',
-    accentColor: '#F37021',
-    previewType: 'product',
-    subjectLine: 'Introducing the New Enhanced Digital Experience'
-  },
-  {
-    id: 'template-07',
-    number: '7',
-    title: 'Newsletter',
-    category: 'Corporate',
-    description: 'Monthly curated digital newsletter featuring expert columns, regulatory news, and client spotlight.',
-    client: 'Voya Financial',
-    bannerColor: '#4A3B32',
-    accentColor: '#E07A5F',
-    previewType: 'newsletter',
-    subjectLine: 'The Monthly Digest: Strategic Perspectives for Enterprise Leaders'
-  },
-  {
-    id: 'template-08',
-    number: '8',
-    title: 'Promotional Offer',
-    category: 'Marketing',
-    description: 'Targeted promotion with limited-time fee waivers and interactive benefit comparison table.',
-    client: 'Voya Financial',
-    bannerColor: '#0052CC',
-    accentColor: '#FFAB00',
-    previewType: 'promo',
-    subjectLine: 'Exclusive limited-time advisory offer for your team'
-  },
-  {
-    id: 'template-09',
-    number: '9',
-    title: 'Year End Campaign',
-    category: 'Seasonal',
-    description: 'Strategic tax-loss harvesting and annual tax planning checklist for individual investors.',
-    client: 'Voya Financial',
-    bannerColor: '#1A365D',
-    accentColor: '#F37021',
-    previewType: 'yearend',
-    subjectLine: 'Year-End Financial Checklist: Maximize deductions before Dec 31'
-  },
-  {
-    id: 'template-10',
-    number: '10',
-    title: 'Holiday Greeting',
-    category: 'Seasonal',
-    description: 'Elegant festive celebration email with warm wishes, holiday schedule, and appreciation message.',
-    client: 'Voya Financial',
-    bannerColor: '#0A192F',
-    accentColor: '#FBBF24',
-    previewType: 'holiday',
-    subjectLine: 'Warm holiday greetings and best wishes for the New Year'
-  }
+  
 ];
 
 export const experienceData: ExperienceItem[] = [

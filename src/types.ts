@@ -15,13 +15,14 @@ export interface EmailTemplate {
   id: string;
   number: string;
   title: string;
-  category: 'Financial' | 'Planning' | 'Investment' | 'Wellness' | 'Corporate' | 'Marketing' | 'Seasonal';
+  category: 'Financial' | 'Planning' | 'Investment' | 'Wellness' | 'Corporate' | 'Marketing' | 'Seasonal' | 'Email Template';
   description: string;
   client: string;
-  bannerColor: string;
-  accentColor: string;
-  previewType: string;
+  htmlCode?: string; 
   subjectLine: string;
+  liveUrl?: string;
+  imageUrl?: string;
+  
 }
 
 export interface SkillItem {
