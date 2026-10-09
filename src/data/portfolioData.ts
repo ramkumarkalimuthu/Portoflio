@@ -570,7 +570,7 @@ bespoke websites &amp; digital experiences for startups. </td>
 </html>`,   
    
     subjectLine: 'A Fresher – Responsive HTML Email Template',
-    liveUrl: 'https://emailcampaigns.netlify.app/a-fresher-website/index.html',
+    liveUrl: 'https://templateemails.netlify.app/a-fresher-website/',
     imageUrl: 'https://a-fresher-email-template.netlify.app/preview.png'
   },
   
