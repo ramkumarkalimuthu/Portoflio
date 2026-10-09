@@ -571,7 +571,8 @@ bespoke websites &amp; digital experiences for startups. </td>
    
     subjectLine: 'A Fresher – Responsive HTML Email Template',
     liveUrl: 'https://templateemails.netlify.app/a-fresher-website/',
-    imageUrl: 'https://a-fresher-email-template.netlify.app/preview.png'
+    imageUrl: 'https://a-fresher-email-template.netlify.app/preview.png',
+    githubUrl: 'https://github.com/ramkumarkalimuthu/frontend-project/tree/main/loopstudios',
   },
   
 ];

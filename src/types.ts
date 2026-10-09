@@ -22,6 +22,7 @@ export interface EmailTemplate {
   subjectLine: string;
   liveUrl?: string;
   imageUrl?: string;
+  githubUrl: string;
   
 }
 
