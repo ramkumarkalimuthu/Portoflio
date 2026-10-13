@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { ArrowRight, Eye, CheckCircle2, ExternalLink } from 'lucide-react';
+import { ArrowRight, Eye, CheckCircle2, ExternalLink, Github } from 'lucide-react';
 import { emailTemplates } from '../data/portfolioData';
 import { EmailTemplate } from '../types';
-import { EmailMockup } from './EmailMockups';
 
 interface EmailTemplatesProps {
   onSelectTemplate: (template: EmailTemplate) => void;
@@ -86,11 +85,7 @@ export const EmailTemplates: React.FC<EmailTemplatesProps> = ({ onSelectTemplate
                     />
                   </div>
                 ) : null}
-                <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 backdrop-blur-xs">
-                  <span className="px-3 py-1.5 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center gap-1 shadow-md">
-                    <Eye className="w-3.5 h-3.5" /> Quick Preview
-                  </span>
-                </div>
+                
               </div>
 
               {/* Card Body */}
@@ -121,7 +116,7 @@ export const EmailTemplates: React.FC<EmailTemplatesProps> = ({ onSelectTemplate
                     className="py-1.5 px-2.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg text-center transition-colors flex items-center justify-center"
                     title="View GitHub repository"
                   >
-                    <Github className="w-3.5 h-3.5 mr-1" />
+                   <Github className="w-3.5 h-3.5 mr-1" />
                     <span>GitHub</span>
                   </a>
                 </div>
@@ -132,4 +127,4 @@ export const EmailTemplates: React.FC<EmailTemplatesProps> = ({ onSelectTemplate
       </div>
     </section>
   );
-};
+}; 

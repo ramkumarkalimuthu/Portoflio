@@ -17,9 +17,9 @@ export interface EmailTemplate {
   title: string;
   category: 'Financial' | 'Planning' | 'Investment' | 'Wellness' | 'Corporate' | 'Marketing' | 'Seasonal' | 'Email Template';
   description: string;
-  client: string;
-  htmlCode?: string; 
-  subjectLine: string;
+  //client: string;
+  //htmlCode?: string; 
+ // subjectLine: string;
   liveUrl?: string;
   imageUrl?: string;
   githubUrl: string;
